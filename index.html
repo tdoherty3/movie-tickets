@@ -11,9 +11,90 @@
 
   <body>
 
-        <div class="jumbotron vertical centerß">
-          <h1>Pick A Movie Site</h1>
+    <div class="jumbotron vertical centerß">
+      <h1>Pick A Movie Site</h1>
+    </div>
+    <form id="movie-ticket">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <h2>Which movie?</h2>
+          <div class="radio">
+          <label>
+          <input type="radio" name="movie" value="Black Panther" checked>
+                    Black Panther
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+            <input type="radio" name="movie" value="Lady Bird" checked>
+                    Lady Bird
+          </label>
+          </div>
+          <div class="radio">
+          <label>
+            <input type="radio" name="movie" value="Darkest Hour" checked>
+                    Darkest Hour
+          </label>
+          </div>
         </div>
+
+        <div class="col-md-4">
+          <h2>Which time?</h2>
+            <div class="radio">
+            <label>
+            <input type="radio" name="time" value="Matinee" checked>
+                      Matinee
+            </label>
+            </div>
+            <div class="radio">
+            <label>
+              <input type="radio" name="time" value="Evening" checked>
+                      Evening
+            </label>
+            </div>
+            <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="Late Night" checked>
+                      Late Night
+            </label>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h2>What is your age?</h2>
+              <div class="radio">
+              <label>
+              <input type="radio" name="age" value="Youth" checked>
+                        Youth (Under 12)
+              </label>
+              </div>
+              <div class="radio">
+              <label>
+                <input type="radio" name="age" value="Adult" checked>
+                        Teens and Adults
+              </label>
+              </div>
+              <div class="radio">
+              <label>
+                <input type="radio" name="age" value="Senior" checked>
+                        Senior (62 and up)
+              </label>
+              </div>
+            </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary"><h2>How much is my ticket?</h2></button>
+    </form>
+
+    <div class="show-ticket">
+      <h2>Here's your ticket</h2>
+      <p>Movie: ____ </p>
+      <p>Time: ____ </p>
+      <p>Price: ____ </p>
+    </div>
+
 
   </body>
 </html>
