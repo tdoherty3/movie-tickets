@@ -33,4 +33,15 @@ $(document).ready(function() {
   $("form#movie-ticket").submit(function(event){
     event.prevent.default();
     //$("#price").empty();
-  }
+
+    var movie = $("input:radio[name=movie]:checked").val();
+      console.log(movie);
+      var time = $("input:radio[name=time]:checked").val();
+      console.log(time);
+      var age = $("input:radio[name=age]:checked").val();
+      console.log(age);
+
+  $(".show-ticket").show();
+  $("#nameOfMovie").text(" " + movie);
+  $("#movieTime").text(" " + time);
+  $("ticketPrice").text(" $" + price);
